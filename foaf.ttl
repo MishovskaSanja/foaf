@@ -1,1 +1,37 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<https://raw.githubusercontent.com/MishovskaSanja/foaf/master/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/MishovskaSanja/foaf/master/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/MishovskaSanja/foaf/master/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/MishovskaSanja/foaf/master/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Sanja Mishovska" ;
+  foaf:title "Mrs" ;
+  foaf:givenname "Sanja" ;
+  foaf:family_name "Mishovska" ;
+  foaf:mbox_sha1sum "6b4699e73ebf2ab8204d996619cd2bba435f0db2" ;
+  foaf:workplaceHomepage <https://www.sorsix.com/> ;
+  foaf:workInfoHomepage <https://www.thebalancecareers.com/software-developer-job-description-salary-and-skills-2061833> ;
+  foaf:schoolHomepage <https://www.finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Emilija" ;
+    foaf:mbox_sha1sum "b0d03fce499aa7696467ed1d15012b2cfccc1f52" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/GeorgievskaEmilija/wbs-foaf/master/foaf.ttl?fbclid=IwAR1_3u8xvJz6tsEm4e3prZ_BnMEQhnUWPKja2iO28E1CmxeAKjFgLLXZPc0>
+  ], [
+    a foaf:Person ;
+    foaf:name "Martina" ;
+    foaf:mbox_sha1sum "2fbaa7b13fd574358d6c4746975d516b7c153fd0" ;
+    rdfs:seeAlso <https://gitlab.com/MartinaS14/wbs/-/raw/main/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Jelena" ;
+    foaf:mbox_sha1sum "d8b4eae97d0aee756abd9b40663d115e83d1344d" ;
+    rdfs:seeAlso <https://gitlab.com/ognjanoskajelena/foaf/-/raw/master/foaf.ttl>
+  ] .
